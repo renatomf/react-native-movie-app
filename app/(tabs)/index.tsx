@@ -65,12 +65,11 @@ export default function Index() {
                 data={movies}
                 renderItem={({ item }) => (
                   <MovieCard
-                     id={item.id}
-                      poster_path={item.poster_path}
-                      title={item.title}
-                      vote_average={item.vote_average}
-                      release_date={item.release_date}
-                  />
+                    id={item.id}
+                    poster_path={item.poster_path}
+                    title={item.title}
+                    vote_average={item.vote_average}
+                    release_date={item.release_date} adult={false} backdrop_path={""} genre_ids={[]} original_language={""} original_title={""} overview={""} popularity={0} video={false} vote_count={0}                  />
                 )}
                 keyExtractor={(item) => item.id.toString()}
                 numColumns={3}
